@@ -131,7 +131,7 @@ def submit_registration_form():
     dob = dob_entry.get()
     doi = doi_entry.get()
 
-    # Store the data (You can modify this to store in a file or database)
+    # Store the data
     with open("registrations.txt", "a") as file:
         file.write(f"Name: {name}, Email: {email}, Phone: {phone_number}, Submission: {paper_submission}, University: {university}, DOB: {dob}, DOI: {doi}\n")
 
@@ -152,7 +152,7 @@ root.geometry("800x600")
 header_frame = tk.Frame(root, bg='#1A73E8', height=80)
 header_frame.pack(fill=tk.X)
 
-# Logo (Replace 'logo.png' with your own logo file)
+# Logo 
 '''
 logo = tk.PhotoImage(file='logo.png')
 logo_label = tk.Label(header_frame, image=logo, bg='#1A73E8')
@@ -170,7 +170,7 @@ for button_text in buttons:
     button = tk.Button(nav_bar, text=button_text, command=lambda text=button_text: on_button_click(text), fg='#ffffff', bg='#333333', font=("Arial", 12, "bold"))
     button.pack(side=tk.LEFT, padx=10, pady=5)
 
-# Banner with Background Image (Commented out for now)
+# Banner with Background Image 
 '''
 banner_frame = tk.Frame(root, height=150)
 banner_frame.pack(fill=tk.X)
